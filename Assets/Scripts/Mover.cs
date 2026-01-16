@@ -3,8 +3,8 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     public float speed = 0.01f;
-    float xMax = 10;
-    float xMin = -10;
+    public float xMax = 10;
+    public float xMin = -10;
     public float value = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +16,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         Vector3 moverXPos = transform.position;
-        moverXPos.x = moverXPos.x + speed;
+        moverXPos.x += speed *Time.deltaTime;
         transform.position = moverXPos;
         if (speed > 0)              //acclerating the speed during moving
         {
