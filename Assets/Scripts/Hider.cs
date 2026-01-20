@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 
-/* Understand the most, maye the formate for writing a scritt in Unity, as well as how to
+/* Understand the most, make the formate for writing a script in Unity, as well as how to
  * let differnt components function together
  */
 public class Hider : MonoBehaviour

@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityEngine;
-
+//Learn how to use animation curve.
 public class Pulser : MonoBehaviour
 {
     public AnimationCurve curve;
