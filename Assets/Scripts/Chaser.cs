@@ -45,6 +45,7 @@ public class Chaser : MonoBehaviour
         {
             speed *= -1;
         }
+
     
     }
 }
