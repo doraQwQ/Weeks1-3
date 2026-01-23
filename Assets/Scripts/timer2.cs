@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Timer : MonoBehaviour
+public class timer2 : MonoBehaviour
 {
-    public float rotateSpeed=-360f;
+    public float rotateSpeed = -30f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,8 +12,8 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 iHATEUNITY = transform.eulerAngles;
-        iHATEUNITY.z +=rotateSpeed * Time.deltaTime;
-        transform.eulerAngles = iHATEUNITY;
+        Vector3 iHATEUNITY2 = transform.eulerAngles;
+        iHATEUNITY2.z += rotateSpeed * Time.deltaTime;
+        transform.eulerAngles = iHATEUNITY2;
     }
 }
