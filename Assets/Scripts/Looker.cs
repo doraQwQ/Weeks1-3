@@ -36,6 +36,8 @@ public class Looker : MonoBehaviour
         /*the console value is different than inspector.
          * Eurlerangle goes from 0 -360
            inspector shows -180 to 180 */
+
+        //This one the object rotate based on the mouse position
         Vector3 currentMousePosition = Mouse.current.position.ReadValue();
         Vector3 worldMousePosition= gameCamera.ScreenToWorldPoint(currentMousePosition);
         worldMousePosition.z = 0;
