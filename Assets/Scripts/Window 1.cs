@@ -7,8 +7,10 @@ public class Window1 : MonoBehaviour
     public float duration = 60;
     public float progress = 0;
     public Vector3 output;
-    public bool a = true;
+    public bool value = true;
     Vector3 currentPos;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -20,14 +22,14 @@ public class Window1 : MonoBehaviour
     {
         if (progress>1)//when the window reach the new coordinate
         {
-            a = true;
+            value = true;
             progress = 0;
         }
-        if (a)          //set the first value for lerp
+        if (value)          //set the first value for lerp
         {
             newPosition = new Vector3(Random.Range(-9f, 9f), Random.Range(-5f, 5f), 0f);
             currentPos = transform.position;
-            a = false;
+            value = false;
         }
         progress += Time.deltaTime / duration;
         output = Vector3.Lerp(currentPos, newPosition, progress);

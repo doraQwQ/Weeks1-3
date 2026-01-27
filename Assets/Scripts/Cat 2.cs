@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//This function move the cat's head up and down
 public class Cat2 : MonoBehaviour
 {
     public float ySpeed = 0.05f;

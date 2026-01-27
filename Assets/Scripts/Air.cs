@@ -1,6 +1,6 @@
 using System.Threading;
 using UnityEngine;
-
+//This function makes the air move up , then moveing forward and backward.
 public class Air : MonoBehaviour
 {
     public float xSpeed = 0.4f;

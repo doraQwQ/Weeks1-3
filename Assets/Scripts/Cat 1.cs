@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//This function moves the cat front and back.
 public class Cat1 : MonoBehaviour
 {
     public float xSpeed = 0.4f;

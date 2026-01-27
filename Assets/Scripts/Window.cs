@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-
+//This function changes the size of the window based on the mouse position with 1,1,1
 public class Window  : MonoBehaviour
 {
     public Camera gameCamera;
