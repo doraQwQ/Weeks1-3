@@ -1,27 +1,39 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
+using static UnityEditor.Rendering.CameraUI;
+//This function makes the window move to random position 
 public class Window1 : MonoBehaviour
 {
-    public Camera gameCamera;
+    public Vector3 newPosition;
+    public float duration = 60;
+    public float progress = 0;
+    public Vector3 output;
+    public bool a = true;
+    Vector3 currentPos;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+         
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 currentMousePosition = Mouse.current.position.ReadValue();
-        Vector3 worldMousePosition = gameCamera.ScreenToWorldPoint(currentMousePosition);
-        worldMousePosition.z = 0f;
-        float distance = Vector3.Distance(worldMousePosition, Vector3.one);
-        if(distance < 4f)
+        if (progress>1)//when the window reach the new coordinate
         {
-            transform.localScale = ((distance * Vector3.one) / 2) / 2;
+            a = true;
+            progress = 0;
         }
-        
-            
+        if (a)          //set the first value for lerp
+        {
+            newPosition = new Vector3(Random.Range(-9f, 9f), Random.Range(-5f, 5f), 0f);
+            currentPos = transform.position;
+            a = false;
+        }
+        progress += Time.deltaTime / duration;
+        output = Vector3.Lerp(currentPos, newPosition, progress);
+        transform.position = output;
+
+
+
     }
 }
