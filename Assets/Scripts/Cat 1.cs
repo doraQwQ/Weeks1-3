@@ -14,7 +14,7 @@ public class Cat1 : MonoBehaviour
     {
         Vector3 catPos = transform.position;
         catPos.x+=xSpeed*Time.deltaTime;
-        if (catPos.x > 8.2f)
+        if (catPos.x > 8.2f)                        //Make the cat animation cycles when get too far
         {
             xSpeed *= -1;
         } else if(catPos.x< 7.5f)

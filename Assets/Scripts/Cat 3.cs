@@ -4,6 +4,7 @@ using static UnityEditor.Rendering.CameraUI;
 using UnityEditor;
 using System.Collections;
 //This function makes the cat fade in and out based on the animation curve
+//sadly cannot use
 public class Cat3 : MonoBehaviour
 {
     public AnimationCurve curve;

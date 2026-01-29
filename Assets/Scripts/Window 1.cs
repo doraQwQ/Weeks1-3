@@ -4,11 +4,11 @@ using static UnityEditor.Rendering.CameraUI;
 public class Window1 : MonoBehaviour
 {
     public Vector3 newPosition;
-    public float duration = 60;
+    public float duration = 3;
     public float progress = 0;
     public Vector3 output;
     public bool value = true;
-    Vector3 currentPos;
+    public Vector3 currentPos;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

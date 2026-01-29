@@ -14,7 +14,7 @@ public class Cat2 : MonoBehaviour
     void Update()
     {
         
-        Vector3 catPos2 = transform.position;
+        Vector3 catPos2 = transform.position;           // Have the cat's head movenment cycles
         catPos2.y += ySpeed * Time.deltaTime;
         if (catPos2.y > 3.16)
         {

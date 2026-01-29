@@ -1407,7 +1407,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8430137894388489581, guid: c6abc671eb9bc314094ddd53be9ce56d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1682,7 +1682,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -8430137894388489581, guid: c6abc671eb9bc314094ddd53be9ce56d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1722,10 +1722,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPosition: {x: 0, y: 0, z: 0}
-  duration: 0
+  duration: 3
   progress: 0
   output: {x: 0, y: 0, z: 0}
-  a: 1
+  value: 1
+  currentPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1538850441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2193,6 +2194,7 @@ GameObject:
   - component: {fileID: 2128838844}
   - component: {fileID: 2128838843}
   - component: {fileID: 2128838845}
+  - component: {fileID: 2128838846}
   m_Layer: 0
   m_Name: Cat 3
   m_TagString: Untagged
@@ -2277,7 +2279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128838842}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b294f3524441274dbfafb49d29cc540, type: 3}
   m_Name: 
@@ -2316,6 +2318,54 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration: 10
+  progress: 0
+  end: 0
+--- !u!114 &2128838846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128838842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a252fa7aed407934ea75a8254ae046e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.014415741
+      value: -0.009155273
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.062038064
+      value: 0.03086853
+      inSlope: -0.00041530028
+      outSlope: -0.00041530028
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.113967896
+      value: -0.008895874
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  duration: 5
   progress: 0
   end: 0
 --- !u!1660057539 &9223372036854775807
